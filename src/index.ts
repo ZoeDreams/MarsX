@@ -1,4 +1,4 @@
-import {app, BrowserWindow} from 'electron'
+import {app, BrowserWindow, Menu} from 'electron'
 declare const MAIN_WINDOW_WEBPACK_ENTRY: string
 declare const MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY: string
 
@@ -11,12 +11,20 @@ if (require('electron-squirrel-startup')) {
 const createWindow = (): void => {
 	// Create the browser window.
 	const mainWindow = new BrowserWindow({
-		height: 600,
 		width: 800,
+		height: 600,
+		minWidth: 800,
+		minHeight: 600,
+		frame: false,
 		show: false,
+		backgroundColor: '#000000',
+		title: 'MarsX',
+		titleBarStyle: 'hidden',
 		webPreferences: {
 			nodeIntegration: false,
 			preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY,
+			spellcheck: false,
+			enableWebSQL: false,
 		},
 	})
 
@@ -25,6 +33,9 @@ const createWindow = (): void => {
 
 	// and load the index.html of the app.
 	mainWindow.loadURL(MAIN_WINDOW_WEBPACK_ENTRY)
+
+	//disable the default file menu
+	Menu.setApplicationMenu(null)
 
 	// opens the window on the users desktop
 	mainWindow.show()
