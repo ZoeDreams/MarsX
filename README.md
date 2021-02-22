@@ -1,6 +1,6 @@
 # MarsX
 
-A game about colonizing mars that is built with **Lume** and **Electron**
+A game about colonizing mars that is built with [**AssemblyScript**](https://www.assemblyscript.org/), [**ASWebGLue**](https://github.com/lume/ASWebGLue), and [**Electron**](https://www.electronjs.org/)
 
 ## Overview
 
@@ -89,7 +89,7 @@ This will prettify, lint, and `git add .` your files to the current commit in pr
 -   [ ] add support for **JSX**
 -   [ ] add lume graphics engine
 -   [ ] make canvas scale to the entire window
--   [ ] create simple `HelloLume` app
+-   [ ] create simple `HelloGlas` app
 -   [ ] integrate github as our autoupdate hose; support `yarn publish`
 -   [ ] setup unit testing with **Mocha**
 -   [x] **FIX:** hot deployment _[HWR]_ for webpack

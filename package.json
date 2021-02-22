@@ -2,23 +2,16 @@
 	"name": "marsx",
 	"productName": "marsx",
 	"version": "1.0.0",
-	"description": "My Electron application description",
+	"description": "A game about colonizing mars that is built with AssemblyScript, WebGL, and Electron",
 	"main": ".webpack/main",
-	"scripts": {
-		"start": "electron-forge start",
-		"package": "electron-forge package",
-		"make": "electron-forge make",
-		"publish": "electron-forge publish",
-		"prettier": "prettier --config ./.prettierrc.js --ignore-path ./.prettierignore  --write ./**/*.{js,json,ts,tsx,md}",
-		"// ^ prettier script will be simplified when we get @lume/cli working directly from the terminal without having to manually run global install": "",
-		"lint": "eslint --ext .ts .",
-		"prestage": "yarn predev",
-		"stage": "git add .",
-		"predev": "yarn prettier && yarn lint",
-		"dev": "yarn start",
-		".": "yarn dev"
-	},
-	"keywords": [],
+	"keywords": [
+		"Game",
+		"Mars",
+		"AssemblyScript",
+		"WebGL",
+		"Electron",
+		"ASWebGLue"
+	],
 	"author": {
 		"name": "Kara Rawson",
 		"email": "rawsonkara@gmail.com"
@@ -91,7 +84,19 @@
 		"typescript": "^4.0.2"
 	},
 	"dependencies": {
-		"electron-squirrel-startup": "^1.0.0",
-		"lume": "^0.0.0-rc.0"
+		"electron-squirrel-startup": "^1.0.0"
+	},
+	"scripts": {
+		"start": "electron-forge start",
+		"package": "electron-forge package",
+		"make": "electron-forge make",
+		"publish": "electron-forge publish",
+		"prettier": "prettier --config ./.prettierrc.js --ignore-path ./.prettierignore  --write ./**/*.{js,json,ts,tsx,md}",
+		"lint": "eslint --ext .ts .",
+		"prestage": "yarn predev",
+		"stage": "git add .",
+		"predev": "yarn prettier && yarn lint",
+		"dev": "yarn start",
+		".": "yarn dev"
 	}
 }
