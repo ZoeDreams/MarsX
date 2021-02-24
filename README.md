@@ -1,3 +1,5 @@
+<p><img align="center" src="https://github.com/ZoeDreams/MarsX/blob/main/banner.gif" alt=""/></p>
+
 # MarsX
 
 A game about colonizing mars that is built with [**AssemblyScript**](https://www.assemblyscript.org/), [**ASWebGLue**](https://github.com/lume/ASWebGLue), and [**Electron**](https://www.electronjs.org/)
