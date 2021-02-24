@@ -1,4 +1,4 @@
-<p><img align="center" src="https://github.com/ZoeDreams/MarsX/blob/main/banner.gif" alt=""/></p>
+<p align="center"><img align="center" src="https://github.com/ZoeDreams/MarsX/blob/main/banner.gif" alt=""/></p>
 
 # MarsX
 
