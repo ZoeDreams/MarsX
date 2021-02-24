@@ -2,7 +2,7 @@
 
 # MarsX
 
-A game about colonizing mars that is built with [**AssemblyScript**](https://www.assemblyscript.org/), [**ASWebGLue**](https://github.com/lume/ASWebGLue), and [**Electron**](https://www.electronjs.org/)
+A game about colonizing mars that is built with [**AssemblyScript**](https://www.assemblyscript.org/), [**GLAS**](https://github.com/lume/glas), and [**Electron**](https://www.electronjs.org/)
 
 ## Overview
 
